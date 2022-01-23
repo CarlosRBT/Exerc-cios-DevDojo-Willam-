@@ -1,3 +1,3 @@
-# Exerc-cios-DevDojo-Willam-
+# Exerc-cios-DevDojo-William-
 
-Primeiro exercício resolvido proposto pelo Willam.
+Primeiro exercício resolvido proposto pelo William.
