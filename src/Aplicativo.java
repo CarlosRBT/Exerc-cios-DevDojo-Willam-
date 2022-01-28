@@ -129,3 +129,16 @@ public class Aplicativo {
     }
 
 }
+/*
+Observações:
+1: Só consegui fazer o programa retornar ao início depois de add while na linha 6, antes disso tentei colocar o comando
+return fora das chaves em vários lugares e não consegui resolver.
+O problema é que aí a função 2 da linha 117, que seria para encerrar o programa não funciona mais, porquê sempre volta para o início.
+
+2: Não consegui resolver isso, se tiro o while da linha 6, a função 2 de encerrar funciona, mas aí não consigo fazer o
+programa retornar ao início.
+Sei que você é super ocupado aí, mas me ajuda a resolver isso por favor, vi várias aulas e não consegui resolver. Não quero
+iniciar outro exercício sem terminar este, obrigado.
+
+
+*/
