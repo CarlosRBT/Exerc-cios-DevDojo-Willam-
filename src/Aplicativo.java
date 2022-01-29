@@ -5,7 +5,7 @@ public class Aplicativo {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             int retornarMenu = 1;
-            System.out.println("Olá, seja bem vindo a Montadora DevDojo Automóveis, a maior e mais completa montadora de carros do planete!");
+            System.out.println("\n\nOlá, seja bem vindo a Montadora DevDojo Automóveis, a maior e mais completa montadora de carros do planeta!");
             System.out.println("É uma satisfação enorme recebe-lo, aqui em baixo está uma lista marcas de veículos que temos a disposição.\n");
             System.out.println("1|GM        \t2|Hyundai  \t3|Volkswagen \t4|Audi \t5|Mercedes \t6|Peugeot \t7|SAIR\n" +
                     "|-----------\t|----------\t|------------\t|------\t|----------\t|---------\t|\n" +
@@ -34,7 +34,7 @@ public class Aplicativo {
             arrayMulti[5][1] = "\n-208";
             arrayMulti[5][2] = "\n-2008";
 
-            System.out.println("Por favor, digite um número correspondente a marca que deseja consultar: ");
+            System.out.println("Por favor, digite um número correspondente a marca que deseja consultar:");
 
             int marcasVeiculo = scanner.nextInt();
             System.out.println("Sua escolha foi: " + marcasVeiculo);
@@ -102,43 +102,31 @@ public class Aplicativo {
             } else if (marcasVeiculo == 7) {
                 System.out.println("Encarrando programa");
                 break;
+            } else if (marcasVeiculo < 1 || marcasVeiculo > 6) {
+                System.out.println("Opção inválida");
+                continue;
             }
-            int retornaMenu = 1;
-            final int sair = 2;
+
+
             boolean menu = true;
 
-
             while (menu) {
-                System.out.println("\n\nDigite 1 para voltar ao menu ou 2 para encerrar aplicativo");
+                System.out.println("\n\nPor Favor, digite 1 para voltar ao menu:");
                 int valor = scanner.nextInt();
                 if (valor == 1) {
                     menu = false;
-                    System.out.println(retornarMenu);
-                } else if (valor == 2) {
-                    break;
 
 
-                } else if (valor != 2) {
+                } else if (valor != 1) {
                     System.out.println("Opção inválida");
+                    continue;
                 }
 
             }
+
 
         }
 
     }
 
 }
-/*
-Observações:
-1: Só consegui fazer o programa retornar ao início depois de add while na linha 6, antes disso tentei colocar o comando
-return fora das chaves em vários lugares e não consegui resolver.
-O problema é que aí a função 2 da linha 117, que seria para encerrar o programa não funciona mais, porquê sempre volta para o início.
-
-2: Não consegui resolver isso, se tiro o while da linha 6, a função 2 de encerrar funciona, mas aí não consigo fazer o
-programa retornar ao início.
-Sei que você é super ocupado aí, mas me ajuda a resolver isso por favor, vi várias aulas e não consegui resolver. Não quero
-iniciar outro exercício sem terminar este, obrigado.
-
-
-*/
